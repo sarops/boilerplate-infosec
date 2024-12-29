@@ -11,7 +11,7 @@ app.use(helmet.ieNoOpen());
 const timeInSeconds = 90 * 24 * 60 * 60;
 app.use(helmet.hsts({maxAge: timeInSeconds, force: true}));
 
-app.use(helmet.dnsPreFetchControl());
+app.use(helmet.dnsPrefetchControl());
 
 
 
